@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat aplicada globalmente */
+}
+
+body {
+    background-color: #fce4ec; /* Fondo rosado pastel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 15px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative; /* Para posicionar el logo dentro del contenedor */
+}
+
+.cancer-logo {
+    position: absolute;
+    bottom: 10px; /* Coloca la imagen en la parte inferior */
+    right: 10px;  /* Coloca la imagen en la parte derecha */
+    width: 50px; /* Reducido a 50px para hacer la imagen más pequeña */
+    height: auto; /* Mantener la proporción original de la imagen */
+    opacity: 0.8; /* Ligera transparencia para un toque visual */
+}
+
+h1 {
+    color: #f48fb1; /* Cambiado al rosado pastel del botón de "Predecir" */
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700; /* Fuente más gruesa (Montserrat Bold) */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat aplicada al título */
+}
+
+p {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Botón personalizado para seleccionar archivo */
+.custom-file-upload {
+    display: inline-block;
+    background-color: #f8bbd0; /* Rosado pastel claro */
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700; /* Fuente más gruesa */
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.custom-file-upload:hover {
+    background-color: #f48fb1; /* Rosado pastel un poco más oscuro */
+    transform: translateY(-3px);
+}
+
+.custom-file-upload:active {
+    transform: translateY(0);
+}
+
+/* Botón de predicción */
+button {
+    background-color: #f48fb1; /* Mismo tono rosado pastel que el hover del botón anterior */
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700; /* Fuente más gruesa */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ec407a; /* Rosado más intenso */
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.result {
+    margin-top: 1.5rem;
+}
+
+.result h3 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.result p {
+    color: #555;
+    font-size: 1rem;
+}

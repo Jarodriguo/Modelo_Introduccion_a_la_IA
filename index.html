@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detección de Cáncer con IA</title>
+    <!-- Estilo de fuente Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo del cáncer de mama -->
+        <img src="logo.png" alt="Lazo de concienciación sobre el cáncer de mama" class="cancer-logo">
+
+        <h1>Detección de Cáncer con IA</h1>
+        <p>Sube una radiografía o tomografía y obtén un diagnóstico preliminar</p>
+
+        <!-- Botón de selección de archivo personalizado -->
+        <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+        <label for="imageUpload" class="custom-file-upload">Seleccionar archivo</label>
+        
+        <!-- Botón de predicción -->
+        <button id="predictButton" onclick="predict()">Predecir</button>
+        
+        <!-- Sección de resultados -->
+        <div class="result">
+            <h3>Resultado:</h3>
+            <p id="resultText">Esperando una imagen...</p>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
